@@ -1,0 +1,114 @@
+.sub-list-inner {
+    @extend %clearfix;
+    padding: 80px 0 115px 0;
+}
+
+.sub-list-image {
+    float: left;
+    width: 42%;
+    margin-top: 47px;
+}
+
+.sub-list-info {
+    float: right;
+    width: 41%;
+}
+
+.sub-list-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sub-list-info-top {
+    padding-top: 17px;
+}
+
+.sub-list-h4{
+    font-size: 23px;
+    line-height: 43px;
+    font-weight: 700;
+    color: $darkgray;
+}
+
+.sub-list-divider {
+    border-top: 2px solid $orange;
+    width: 64px;
+    margin-top: 16px;
+    margin-bottom: 25px;
+}
+
+.sub-list-p {
+    font-size: 16px;
+    line-height: 20px;
+    color: $textgray;
+}
+
+.sub-list-info-bottom {
+    @extend %clearfix;
+    margin-top: 44px;
+}
+
+.sub-list-icon {
+    float: left;
+    width: 14%;
+}
+
+.icon-icon-cloud {
+    font-size: 17px;
+    text-align: center;
+    color: $orange;
+    border-radius: 50%;
+    border: 1px solid $orange;
+    height: 44px;
+    width: 44px;
+    padding: 11px 8px;
+}
+
+.sub-bottom-info {
+    float: right;
+    width: 84%;
+}
+
+.sub-bottom-info-h5 {
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 600;
+    color: $darkgray;
+}
+
+.sub-bottom-info-p {
+    font-size: 14px;
+    line-height: 22px;
+    color: $textgray;
+    margin-top: 6px;
+}
+
+@include breakpoint(tablet) {
+    .sub-list-info {
+        width: 53%;
+    }
+    .sub-list-image {
+        width: 42%;
+    }
+}
+
+@include breakpoint(phone) {
+    .sub-list-inner {
+        padding: 80px 0 80px 0;
+    }
+    .sub-list-info {
+        width: 100%;
+        display: block;
+    }
+    .sub-list-image {
+        width: 100%;
+        display: block;
+        margin-top: 0;
+    }
+    .sub-bottom-info {
+        width: 76%;
+    }
+}
+

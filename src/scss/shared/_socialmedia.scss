@@ -1,0 +1,88 @@
+.social-media {
+    display: block;
+    border-bottom: 1px solid $darkgray;
+}
+
+.social-media-inner {
+    @extend %clearfix;
+    padding-top: 20px;
+    padding-bottom: 17px;
+}
+
+.social-media-text {
+    float: left;
+    width: 38%;
+}
+
+.social-media-icons {
+    float: right;
+    width: 60%;
+    padding-top: 5px;
+}
+
+.icons-list {
+    font-size: 0;
+    :last-child {
+        margin-right: 0;
+    }
+}
+
+.icons-item {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    margin-right: 54px;
+}
+
+.social-media-h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: $darkgray;
+}
+
+.social-media-p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: $textgray;
+    margin-top: 8px;
+}
+
+.icons-link {
+    font-size: 45px;
+    color: $inputtxt;
+    text-align: center;
+    &:hover {
+        color: $orange;
+    }
+}
+
+@include breakpoint(tablet) {
+    .social-media-text, .social-media-icons {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@include breakpoint(phone) {
+    .social-media-text, .social-media-icons {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .social-media-icons {
+        padding-top: 15px;
+    }
+    .icons-item {
+        margin-right: 18px;
+    }
+    .icons-link {
+        font-size: 23px;
+    }
+    .social-media-p {
+        font-size: 13px;
+        line-height: 18px;
+    }
+}

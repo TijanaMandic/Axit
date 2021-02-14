@@ -1,0 +1,74 @@
+/**
+iconfont Webfont
+*/
+@font-face {
+	font-family: 'iconfont';
+	src: url('../fonts/iconfont.eot?1613210461921');
+	src: url('../fonts/iconfont.eot?#iefix-1613210461921') format('embedded-opentype'),
+		url('../fonts/iconfont.woff2?1613210461921') format('woff2'),
+		url('../fonts/iconfont.woff?1613210461921') format('woff'),
+		url('../fonts/iconfont.ttf?1613210461921') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^='icon-']::before,
+[class*=' icon-']::before {
+	font-family: 'iconfont';
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1;
+	font-weight: normal;
+	font-style: normal;
+	speak: none;
+	text-decoration: inherit;
+	font-size: inherit;
+	text-transform: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*
+Glyphs list
+*/
+
+.icon-icon-cloud::before {
+	content: '\ea01';
+}
+
+.icon-icon-facebook::before {
+	content: '\ea02';
+}
+
+.icon-icon-flash::before {
+	content: '\ea03';
+}
+
+.icon-icon-google::before {
+	content: '\ea04';
+}
+
+.icon-icon-instagram::before {
+	content: '\ea05';
+}
+
+.icon-icon-keyboard::before {
+	content: '\ea06';
+}
+
+.icon-icon-lightbulb::before {
+	content: '\ea07';
+}
+
+.icon-icon-pinterest::before {
+	content: '\ea08';
+}
+
+.icon-icon-twitter::before {
+	content: '\ea09';
+}
+
+.icon-icon-wifi::before {
+	content: '\ea0a';
+}

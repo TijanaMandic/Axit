@@ -1,0 +1,181 @@
+.banner-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 640px;
+}
+
+.banner-container {
+    font-size: 0;
+    padding-top: 110px;
+}
+
+.banner-left {
+    float: left;
+    font-size: 16px;
+    width: 60%;
+    //padding-bottom: 86px;
+}
+
+.banner-right {
+    float: right;
+    font-size: 16px;
+    width: 40%;
+    //padding-bottom: 119px;
+}
+
+.banner-left-top {
+    padding-right: 120px;
+}
+
+.banner-left-h1 {
+    font-size: 36px;
+    line-height: 42px;
+    color: $white;
+    margin-top: 24px;
+}
+
+.divider {
+    border-top: 2px solid $white;
+    width: 67px;
+    margin-top: 32px;
+}
+
+.banner-left-bottom {
+    padding-right: 194px;
+}
+
+.banner-left-p {
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    color: $white;
+    margin-top: 35px;
+}
+
+.banner-left-btn {
+    margin-top: 53px;
+}
+
+.left-btn-link {
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: $white;
+    padding: 12px 33px;
+    border: 1px solid $white;
+    background-color: transparent;
+    &:hover {
+        background-color: $orange;
+        border: 1px solid $orange;
+    }
+}
+
+// RIGHT
+
+.banner-right-inner {
+    padding: 29px 0px 0px 81px;
+    border-radius: 3px;
+}
+
+.banner-right-first {
+    background-color: $gray;
+    text-align: center;
+    padding: 16px 25px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.first-h2 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: $darkgray;
+}
+
+.first-span {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $orange;
+}
+
+.banner-right-input {
+    background-color: $white;
+    padding: 37px 35px 50px 35px;
+    :last-child {
+        margin-bottom: 0;
+        padding-top: 18px;
+    }
+}
+
+.banner-input-item {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: $inputtxt;
+    padding: 4px 0px 5px 16px;
+    margin-bottom: 40px;
+    border:none;
+    filter: drop-shadow(0px 1px 0px rgba(0,0,1,0.16));
+}
+
+.banner-right-btn {
+    background-color: $orange;
+    text-align: center;
+}
+
+.right-btn {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Open Sans";
+    color: $white;
+    background-color: $orange;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 18px 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+@include breakpoint(tablet) {
+    .banner-left-top, .banner-left-bottom {
+        padding-right: 0;
+    }
+    .banner-right-inner {
+        padding: 29px 0px 0px 25px;
+    }
+}
+
+@include breakpoint(phone) {
+    .banner-background {
+        min-height: 1125px;
+    }
+    .banner-left, .banner-right {
+        display: block;
+        width: 100%;
+    }
+    .banner-left-top, .banner-left-bottom {
+        padding-right: 0;
+    }
+    .banner-right-inner {
+        margin-top: 65px;
+        padding: 0;
+    }
+    .banner-right-input {
+        padding: 29px 30px 29px 30px;
+    }
+    .right-btn {
+        padding: 15px 0;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,167 @@
+.pricing {
+    background-color: $gray;
+}
+
+.pricing-inner {
+    padding: 101px 0 59px 0;
+}
+
+.pricing-top {
+    text-align: center;
+}
+
+.pricing-h5 {
+    font-size: 36px;
+    font-family: "Raleway";
+    line-height: 43px;
+    color: $darkgray;
+}
+
+.pricing-divider {
+    border-top: 2px solid $orange;
+    width: 64px;
+    display: block;
+    margin: 22px auto 0;
+    margin-top: 22px;
+}
+
+.pricing-p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: $textgray;
+    margin-top: 26px;
+}
+
+.pricing-bottom {
+    font-size: 0;
+    margin-top: 78px;
+    :last-child {
+        margin-right: 0;
+    }
+}
+
+.pricing-bottom-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 31%;
+    font-size: 16px;
+    margin-right: 37px;
+}
+
+.identic {
+    margin-top: 35px;
+}
+
+.pricing-item1 {
+    background-color: $darkgray;
+    border-bottom: 1px solid $white;
+    padding: 18px 0;
+}
+
+.pricing-item1-h6 {
+    font-size: 23px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: $white;
+}
+
+.pricing-item2 {
+    background-color: $darkgray;
+    border-bottom: 5px solid $orange;
+    padding-top: 39px;
+    padding-bottom: 15px;
+}
+
+.pricing-item2-dollar {
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: "Raleway";
+    text-align: center;
+    color: $white;
+    margin-right: 3px;
+}
+
+.pricing-item2-number {
+    font-size: 93px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: "Raleway";
+    text-align: center;
+    color: $white;
+}
+
+.pricing-item2-text {
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: italic;
+    color: $white;
+    text-align: center;
+    color: $textgray;
+    margin-top: 27px;
+}
+
+.pricing-item3 {
+    background-color: $white;
+}
+
+.item3-li {
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $darkgray;
+    border-bottom: 1px solid $gray;
+    padding: 11px 0;
+}
+
+//middle
+
+.pricing-item-middle {
+    background-color: $orange;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.item-middle-span {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: $white;
+    text-align: center;
+}
+
+@include breakpoint(tablet) {
+    .pricing-bottom {
+        :last-child {
+            margin-right: auto;
+        }
+    }
+    .pricing-bottom-item {
+        width: 60%;
+        display: block;
+        margin: 0 auto 20px;
+        border-bottom: 2px solid $orange;
+    }
+}
+
+@include breakpoint(phone) {
+    .pricing-bottom {
+        :last-child {
+            margin-right: auto;
+        }
+    }
+    .pricing-bottom-item {
+        width: 80%;
+        display: block;
+        margin: 0 auto 20px;
+        border-bottom: 2px solid $orange;
+    }
+}
+
+
+

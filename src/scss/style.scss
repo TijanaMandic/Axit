@@ -1,0 +1,37 @@
+//Base
+@import 'base/reset';
+@import 'base/font';
+@import 'base/variables';
+
+//Iconfont
+@import 'icon-font/iconfont';
+
+//Helpers
+@import 'helpers/helpers';
+@import 'helpers/mixins';
+
+//Layout
+@import 'layout/layout';
+@import 'layout/buttons';
+
+//Modules
+@import 'modules/header';
+@import 'modules/main';
+@import 'modules/footer';
+
+//Shared 
+@import 'shared/banner';
+@import 'shared/socialmedia';
+@import 'shared/tabs';
+@import 'shared/sublist';
+@import 'shared/standardpic';
+@import 'shared/awesome';
+@import 'shared/pricing';
+@import 'shared/customers';
+@import 'shared/stylishbgd';
+@import 'shared/contactus';
+@import 'shared/footericons';
+
+
+
+

@@ -1,0 +1,54 @@
+.stylish-bgd-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.stylish-bgd-inner {
+    text-align: center;
+    padding: 66px 0 63px 0;
+}
+
+.stylish-bgd-h5 {
+    font-size: 36px;
+    font-family: "Raleway";
+    line-height: 43px;
+    color: $white;
+}
+
+.stylish-bgd-divider {
+    border-top: 2px solid $white;
+    width: 64px;
+    display: block;
+    margin: 22px auto 0;
+    margin-top: 22px;
+}
+
+.stylish-bgd-p {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: $white;
+    margin-top: 26px;
+}
+
+.stylsih-btn {
+    display: block;
+    margin: 49px auto 13px;
+}
+
+.stylish-link-btn {
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: $white;
+    border: 1px solid $white;
+    background-color: transparent;
+    padding: 11px 33px;
+    &:hover {
+        border-color: $orange;
+        color: $orange;
+    }
+}
+

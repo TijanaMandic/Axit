@@ -1,0 +1,79 @@
+.standard-pic {
+    background-color: $gray;
+}
+
+.standard-pic-inner {
+    @extend %clearfix;
+    padding: 80px 0 123px 0;
+}
+
+.standard-pic-info {
+    float: left;
+    width: 41%;
+    margin-top: 15px;
+}
+
+.standard-pic-image {
+    float: right;
+    width: 42%;
+    margin-top: 13px;
+}
+
+.standard-pic-h4 {
+    font-size: 23px;
+    line-height: 43px;
+    font-weight: 700;
+    color: $darkgray;
+}
+
+.standard-pic-divider {
+    border-top: 2px solid $orange;
+    width: 64px;
+    margin-top: 16px;
+    margin-bottom: 25px;
+}
+
+.standard-pic-p1, .standard-pic-p2 {
+    font-size: 16px;
+    line-height: 20px;
+    color: $textgray;
+}
+
+.standard-pic-p2 {
+    margin-top: 20px;
+}
+
+.standard-pic-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@include breakpoint(tablet) {
+    .standard-pic-info {
+        width: 55%;
+    }
+    .standard-pic-image {
+        width: 43%;
+        margin-top: 16px;
+    }
+}
+
+@include breakpoint(phone) {
+    .standard-pic-inner {
+        padding: 60px 0 80px 0;
+    }
+    .standard-pic-info {
+        width: 100%;
+        display: block;
+    }
+    .standard-pic-image {
+        width: 100%;
+        display: block;
+        margin-top: 25px;
+    }
+}
+
+
+

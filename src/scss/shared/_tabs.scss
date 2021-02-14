@@ -1,0 +1,133 @@
+.tabs {
+    background-color: $gray;
+}
+
+.tabs-inner {
+    @extend %clearfix;
+    padding: 120px 0 84px 0px;
+}
+
+.tabs-container {
+    float: left;
+    width: 60%;
+    margin-top: 27px;
+    @extend %clearfix;
+}
+
+.tabs-img {
+    float: right;
+    width: 30%;
+    padding: 48px 0px;
+}
+
+.tabs-bar {
+    float: left;
+    width: 30%;
+    :first-child {
+        background-color: $orange;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    :last-child {
+        margin-bottom: none;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
+
+.tabs-content {
+    float: right;
+    width: 69%;
+}
+
+.tabs-content-item {
+    padding: 5px 0;
+}
+
+.tabs-btn {
+    display: block;
+    background-color: $darkgray;
+    color: $white;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 43px 33px;
+    border-color: transparent;
+    border-bottom: 1px solid $white;
+}
+
+.tabs-item-h4 {
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: $darkgray;
+}
+
+.tabs-item-p1, .tabs-item-p2 {
+    font-size: 15px;
+    line-height: 20px;
+    color: $textgray;
+}
+
+.tabs-item-p1 {
+    margin-top: 49px;
+}
+
+.tabs-item-p2 {
+    margin-top: 20px;
+}
+
+.tabs-item-btn {
+    margin: 60px 0;
+}
+
+.tabs-btn-link {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: $white;
+    background-color: $orange;
+    padding: 14px 25px;
+    &:hover {
+        background-color: transparent;
+        color: $orange;
+        border: 1px solid $orange;
+    }
+}
+
+.tabs-img-city {
+    width: 100%;
+}
+
+@include breakpoint(tablet) {
+    .tabs-img {
+        padding: 130px 0px;
+    }
+}
+
+@include breakpoint(phone) {
+    .tabs-container {
+        width: 100%;
+        margin-top: 0;
+    }
+    .tabs-bar {
+        width: 25%;
+    }
+    .tabs-img {
+        display: none;
+    }
+    .tabs-btn {
+        padding: 18px 21px;
+    }
+    .tabs-item-p1 {
+        margin-top: 35px;
+    }
+    .tabs-item-btn {
+        margin: 45px 0;
+    }
+    .tabs-inner {
+        padding: 90px 0 60px 0px;
+    }
+}
+
