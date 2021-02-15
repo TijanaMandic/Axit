@@ -3,7 +3,7 @@
 }
 
 .pricing-inner {
-    padding: 101px 0 59px 0;
+    padding: 101px 0 87px 0;
 }
 
 .pricing-top {
@@ -36,21 +36,27 @@
 .pricing-bottom {
     font-size: 0;
     margin-top: 78px;
-    :last-child {
-        margin-right: 0;
-    }
 }
 
 .pricing-bottom-item {
     display: inline-block;
     vertical-align: top;
-    width: 31%;
+    width: 33.33%;
     font-size: 16px;
-    margin-right: 37px;
 }
 
-.identic {
+.middle-left {
     margin-top: 35px;
+    padding-right: 27px;
+}
+
+.middle {
+    padding: 0 11px;
+}
+
+.middle-right {
+    margin-top: 35px;
+    padding-left: 27px;
 }
 
 .pricing-item1 {
@@ -111,7 +117,7 @@
 
 .item3-li {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 19px;
     text-transform: uppercase;
     text-align: center;
     color: $darkgray;

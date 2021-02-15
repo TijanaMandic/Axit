@@ -1,6 +1,6 @@
 .sub-list-inner {
     @extend %clearfix;
-    padding: 80px 0 115px 0;
+    padding: 80px 0 125px 0;
 }
 
 .sub-list-image {
@@ -23,6 +23,7 @@
 
 .sub-list-info-top {
     padding-top: 17px;
+    margin-bottom: 44px;
 }
 
 .sub-list-h4{
@@ -47,7 +48,10 @@
 
 .sub-list-info-bottom {
     @extend %clearfix;
-    margin-top: 44px;
+}
+
+.sub-list-margin {
+    margin-bottom: 34px;
 }
 
 .sub-list-icon {

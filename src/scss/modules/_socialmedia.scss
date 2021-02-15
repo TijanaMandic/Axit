@@ -11,7 +11,8 @@
 
 .social-media-text {
     float: left;
-    width: 38%;
+    width: 40%;
+    padding-right: 70px;
 }
 
 .social-media-icons {
@@ -21,6 +22,7 @@
 }
 
 .icons-list {
+    display: block;
     font-size: 0;
     :last-child {
         margin-right: 0;
@@ -71,6 +73,9 @@
         display: block;
         width: 100%;
         text-align: center;
+    }
+    .social-media-text {
+        padding-right: 0;
     }
     .social-media-icons {
         padding-top: 15px;

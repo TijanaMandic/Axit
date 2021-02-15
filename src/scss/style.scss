@@ -14,23 +14,23 @@
 @import 'layout/layout';
 @import 'layout/buttons';
 
-//Modules
-@import 'modules/header';
-@import 'modules/main';
-@import 'modules/footer';
+//Shared
+@import 'shared/header';
+@import 'shared/main';
+@import 'shared/footer';
 
-//Shared 
-@import 'shared/banner';
-@import 'shared/socialmedia';
-@import 'shared/tabs';
-@import 'shared/sublist';
-@import 'shared/standardpic';
-@import 'shared/awesome';
-@import 'shared/pricing';
-@import 'shared/customers';
-@import 'shared/stylishbgd';
-@import 'shared/contactus';
-@import 'shared/footericons';
+//Modules
+@import 'modules/banner';
+@import 'modules/socialmedia';
+@import 'modules/tabs';
+@import 'modules/sublist';
+@import 'modules/standardpic';
+@import 'modules/awesome';
+@import 'modules/pricing';
+@import 'modules/customers';
+@import 'modules/stylishbgd';
+@import 'modules/contactus';
+@import 'modules/footericons';
 
 
 

@@ -19,7 +19,7 @@
     width: 64px;
     display: block;
     margin: 22px auto 0;
-    margin-top: 22px;
+    margin-top: 21px;
 }
 
 .contact-p {
@@ -92,6 +92,11 @@
     background-color: $orange;
     border: 1px solid $orange;
     padding: 10px 20px;
+    &:hover {
+        background-color: $white;
+        color: $orange;
+        border: 1px solid $orange;
+    }
 }
 
 @include breakpoint(tablet) {

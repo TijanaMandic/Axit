@@ -4,25 +4,23 @@
 
 .tabs-inner {
     @extend %clearfix;
-    padding: 120px 0 84px 0px;
+    padding: 119px 0;
 }
 
 .tabs-container {
     float: left;
-    width: 60%;
+    width: 15%;
     margin-top: 27px;
     @extend %clearfix;
 }
 
-.tabs-img {
+.tabs-content {
     float: right;
-    width: 30%;
-    padding: 48px 0px;
+    width: 85%;
+    padding: 33px 0 0px 39px;
 }
 
 .tabs-bar {
-    float: left;
-    width: 30%;
     :first-child {
         background-color: $orange;
         border-top-left-radius: 5px;
@@ -35,24 +33,38 @@
     }
 }
 
-.tabs-content {
-    float: right;
-    width: 69%;
-}
-
-.tabs-content-item {
-    padding: 5px 0;
-}
-
 .tabs-btn {
     display: block;
     background-color: $darkgray;
     color: $white;
     font-size: 15px;
     line-height: 20px;
-    padding: 43px 33px;
+    padding: 43px 30px;
     border-color: transparent;
     border-bottom: 1px solid $white;
+    &:hover {
+        background-color: $orange;
+        border-color: $darkgray;
+    }
+}
+
+.tabs-content-item {
+    @extend %clearfix;
+}
+
+.tabs-content-item-top {
+    float: left;
+    width: 64%;
+}
+
+.tabs-img {
+    float: right;
+    width: 36%;
+    padding-top: 17px;
+}
+
+.tabs-img-city {
+    width: 100%;
 }
 
 .tabs-item-h4 {
@@ -69,18 +81,20 @@
 }
 
 .tabs-item-p1 {
-    margin-top: 49px;
+    padding: 50px 80px 0 0;
 }
 
 .tabs-item-p2 {
-    margin-top: 20px;
+    padding: 20px 80px 0 0;
 }
 
 .tabs-item-btn {
-    margin: 60px 0;
+    padding-top: 46px;
+    width: 121px;
 }
 
 .tabs-btn-link {
+    display: block;
     font-size: 15px;
     font-weight: 600;
     line-height: 20px;
@@ -88,7 +102,7 @@
     text-decoration: none;
     color: $white;
     background-color: $orange;
-    padding: 14px 25px;
+    padding: 13px 24px;
     &:hover {
         background-color: transparent;
         color: $orange;
@@ -96,38 +110,59 @@
     }
 }
 
-.tabs-img-city {
-    width: 100%;
-}
-
 @include breakpoint(tablet) {
+    .tabs-content-item-top {
+        width: 60%;
+    }
     .tabs-img {
-        padding: 130px 0px;
+        width: 40%;
+        padding: 90px 0px;
     }
 }
 
 @include breakpoint(phone) {
+    .tabs-inner {
+        padding: 80px 0;
+    }
     .tabs-container {
         width: 100%;
         margin-top: 0;
     }
     .tabs-bar {
-        width: 25%;
-    }
-    .tabs-img {
-        display: none;
+        font-size: 0;
     }
     .tabs-btn {
-        padding: 18px 21px;
+        display: inline-block;
+        vertical-align: top;
+        width: 33.33%;
+        padding: 25px 25px;
+    }
+    .tabs-content {
+        width: 100%;
+        padding: 0;
+    }
+    .tabs-content-item-top {
+        width: 100%;
+    }
+    .tabs-item-h4 {
+        text-align: center;
+        padding-top: 30px;
     }
     .tabs-item-p1 {
-        margin-top: 35px;
+        padding: 30px 0 0 0;
+        text-align: center;
+    }
+    .tabs-item-p2 {
+        text-align: center;
+        padding: 20px 0 0 0;
     }
     .tabs-item-btn {
-        margin: 45px 0;
+        display: block;
+        margin: 0 auto;
     }
-    .tabs-inner {
-        padding: 90px 0 60px 0px;
+    .tabs-img {
+        width: 100%;
+        padding-top: 40px;
     }
 }
 
