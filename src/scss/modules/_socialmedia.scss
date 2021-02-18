@@ -5,14 +5,13 @@
 
 .social-media-inner {
     @extend %clearfix;
-    padding-top: 20px;
-    padding-bottom: 17px;
+    padding: 19px 0;
 }
 
 .social-media-text {
     float: left;
     width: 40%;
-    padding-right: 70px;
+    padding: 0 25px 0 25px;
 }
 
 .social-media-icons {
@@ -22,7 +21,6 @@
 }
 
 .icons-list {
-    display: block;
     font-size: 0;
     :last-child {
         margin-right: 0;
@@ -39,19 +37,18 @@
 .social-media-h3 {
     font-size: 20px;
     font-weight: 700;
-    letter-spacing: 1px;
     color: $darkgray;
 }
 
 .social-media-p {
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: 1px;
     color: $textgray;
     margin-top: 8px;
 }
 
 .icons-link {
+    display: inline-block;
     font-size: 45px;
     color: $inputtxt;
     text-align: center;
@@ -75,7 +72,7 @@
         text-align: center;
     }
     .social-media-text {
-        padding-right: 0;
+        padding: 0 10px 0 10px;
     }
     .social-media-icons {
         padding-top: 15px;

@@ -3,7 +3,7 @@
 }
 
 .pricing-inner {
-    padding: 101px 0 87px 0;
+    padding: 99px 0 94px 0;
 }
 
 .pricing-top {
@@ -28,7 +28,6 @@
 .pricing-p {
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: 1px;
     color: $textgray;
     margin-top: 26px;
 }
@@ -43,20 +42,12 @@
     vertical-align: top;
     width: 33.33%;
     font-size: 16px;
-}
-
-.middle-left {
     margin-top: 35px;
-    padding-right: 27px;
+    padding: 0 20px;
 }
 
 .middle {
-    padding: 0 11px;
-}
-
-.middle-right {
-    margin-top: 35px;
-    padding-left: 27px;
+    margin-top: 0;
 }
 
 .pricing-item1 {
@@ -66,7 +57,7 @@
 }
 
 .pricing-item1-h6 {
-    font-size: 23px;
+    font-size: 20px;
     line-height: 24px;
     font-weight: 700;
     text-align: center;
@@ -77,7 +68,13 @@
     background-color: $darkgray;
     border-bottom: 5px solid $orange;
     padding-top: 39px;
-    padding-bottom: 15px;
+    padding-bottom: 14px;
+}
+
+.pricing-item2-middle {
+    background-color: $darkgray;
+    padding-top: 39px;
+    padding-bottom: 14px;
 }
 
 .pricing-item2-dollar {
@@ -101,7 +98,7 @@
 
 .pricing-item2-text {
     display: block;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 24px;
     font-weight: 400;
     font-style: italic;
@@ -117,12 +114,12 @@
 
 .item3-li {
     font-size: 14px;
-    line-height: 19px;
+    line-height: 24px;
     text-transform: uppercase;
     text-align: center;
     color: $darkgray;
     border-bottom: 1px solid $gray;
-    padding: 11px 0;
+    padding: 8px 0;
 }
 
 //middle
@@ -130,7 +127,7 @@
 .pricing-item-middle {
     background-color: $orange;
     text-align: center;
-    padding: 5px 0;
+    padding: 8px 0;
 }
 
 .item-middle-span {
@@ -142,30 +139,30 @@
 }
 
 @include breakpoint(tablet) {
-    .pricing-bottom {
-        :last-child {
-            margin-right: auto;
-        }
-    }
     .pricing-bottom-item {
         width: 60%;
         display: block;
         margin: 0 auto 20px;
-        border-bottom: 2px solid $orange;
+        padding: 0 0;
+    }
+    .item3-ul {
+        :last-child {
+            border-bottom: 1px solid $orange;
+        }
     }
 }
 
 @include breakpoint(phone) {
-    .pricing-bottom {
-        :last-child {
-            margin-right: auto;
-        }
-    }
     .pricing-bottom-item {
-        width: 80%;
+        width: 90%;
         display: block;
         margin: 0 auto 20px;
-        border-bottom: 2px solid $orange;
+        padding: 0 0;
+    }
+    .item3-ul {
+        :last-child {
+            border-bottom: 1px solid $orange;
+        }
     }
 }
 

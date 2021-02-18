@@ -1,0 +1,49 @@
+.footer {
+    background-color: $black;
+    padding: 7px 0 13px 0;
+}
+
+.footer-social-media-icons {
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-icons-list {
+    font-size: 0;
+    text-align: center;
+}
+
+.footer-icons-item {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 13px 14px;
+}
+
+.footer-icons {
+    display: inline-block;
+    font-size: 23px;
+    color: $textgray;
+    &:hover {
+        color: $orange;
+    }
+}
+
+.footer-icons-link {
+    display: inline-block;
+}
+
+.footer-span {
+    display: block;
+    font-size: 12px;
+    color: $textgray;
+    text-align: center;
+}
+
+@include breakpoint(phone) {
+    .footer-icons-item {
+        padding: 10px 10px;
+    }
+    .footer-icons {
+        font-size: 20px;
+    }
+}

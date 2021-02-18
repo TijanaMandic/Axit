@@ -35,19 +35,18 @@
 
 .stylsih-btn {
     display: block;
-    margin: 37px auto 0;
-    width: 134px;
+    margin: 35px auto 0;
 }
 
 .stylish-link-btn {
-    display: block;
+    display: inline-block;
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
     color: $white;
     border: 1px solid $white;
     background-color: transparent;
-    padding: 11px 33px;
+    padding: 12px 30px;
     &:hover {
         border-color: $orange;
         color: $orange;

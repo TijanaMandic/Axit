@@ -10,11 +10,12 @@
 
 .header-logo {
     float: left;
-    width: 60%;
+    width: 58%;
+    padding: 1px 0 0 24px;
 }
 
 .header-logo-link {
-    display: block;
+    display: inline-block;
     &:hover {
         opacity: 0.7;
     }
@@ -22,7 +23,8 @@
 
 .header-navigation {
     float: right;
-    width: 40%;
+    width: 42%;
+    padding: 7px 0 0 18px;
 }
 
 .navigation-ul {
@@ -36,13 +38,12 @@
     display: inline-block;
     vertical-align: top;
     font-size: 15px;
-    line-height: 2;
-    margin-right: 48px;
+    margin-right: 49px;
 }
 
 .navigation-link {
+    display: inline-block;
     font-size: 14px;
-    letter-spacing: 1px;
     text-align: right;
     color: $textgray;
     text-decoration: none;
@@ -88,6 +89,9 @@
 }
 
 @include breakpoint(tablet) {
+    .header-logo {
+        padding: 5px 0 0 0px;
+    }
     .nav-toggle {
         display: block;
     }
@@ -139,6 +143,9 @@
 }
 
 @include breakpoint(phone) {
+    .header-logo {
+        padding: 5px 0 0 0px;
+    }
     .nav-toggle {
         display: block;
     }

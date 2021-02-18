@@ -4,7 +4,7 @@
 
 .customers-top {
     text-align: center;
-    margin-bottom: 55px;
+    margin-bottom: 56px;
 }
 
 .customers-h5 {
@@ -25,25 +25,31 @@
 .customers-p {
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: 1px;
     color: $textgray;
     margin-top: 26px;
 }
 
 .customers-bottom {
     font-size: 0;
-    :last-child {
-        margin-right: 0;
-    }
+    padding: 0 46px;
 }
 
 .customers-item {
     display: inline-block;
     vertical-align: top;
-    font-size: 16px;
-    width: 27%;
-    padding-left: 23px;
-    margin-right: 95px;
+    width: 33.33%;
+}
+
+.customers1 {
+    padding-right: 80px;
+}
+
+.customers2 {
+    padding: 0 40px;
+}
+
+.customers3 {
+    padding-left: 80px;
 }
 
 .cloud-bgd {
@@ -51,21 +57,20 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 150px;
+    height: 143px;
 }
 
 .cloud-bgd-p {
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 400;
     font-style: italic;
-    letter-spacing: 1px;
-    line-height: 17px;
     color: $textgray;
-    padding: 21px 0 5px 13px;
+    padding: 20px 13px 32px 11px;
 }
 
 .customer-info {
     @extend %clearfix;
-    margin-top: 3px;
+    margin-top: 8px;
 }
 
 .customer-img {
@@ -75,40 +80,52 @@
 
 .avatar-info {
     float: right;
-    width: 69%;
+    width: 74%;
+    padding: 15px 0 0 17px;
 }
 
 .customer-h6 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     color: $darkgray;
-    margin-top: 12px;
 }
 
 .customer-span {
     display: block;
     font-size: 14px;
     color: $textgray;
+    margin-top: 8px;
 }
 
 @include breakpoint(tablet) {
+    .customers-bottom {
+        padding: 0 0;
+    }
     .customers-item {
-        width: 33%;
-        margin-right: 0;
+        padding: 0 5px;
     }
 }
 
 @include breakpoint(phone) {
     .customers-bottom {
+        padding: 0 0;
         :last-child {
-            margin-right: auto;
             margin-bottom: 0;
         }
     }
     .customers-item {
-        width: 80%;
-        display: block;
-        margin: 0 auto 30px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .customers1 {
+        padding-right: 0;
+    }
+    
+    .customers2 {
+        padding: 0;
+    }
+    
+    .customers3 {
         padding-left: 0;
     }
 }

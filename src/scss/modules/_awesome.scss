@@ -1,5 +1,5 @@
 .awesome-inner {
-    padding: 101px 0 96px 0;
+    padding: 100px 0;
 }
 
 .awesome-top {
@@ -24,21 +24,21 @@
 .awesome-p {
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: 1px;
     color: $textgray;
     margin-top: 26px;
 }
 
 .awesome-bottom {
     font-size: 0;
-    margin-top: 70px;
+    margin-top: 76px;
 }
 
 .awesome-bottom-item {
     display: inline-block;
     vertical-align: top;
     font-size: 16px;
-    width: 33%;
+    width: 33.33%;
+    padding: 0 15px;
 }
 
 .awesome-icon {
@@ -46,35 +46,41 @@
     margin: 0 auto;
 }
 
-.icon-icon-lightbulb, .icon-icon-keyboard, .icon-icon-flash {
+.awesome-icon-link {
     display: block;
     margin: 0 auto;
+    position: relative;
+    height: 70px;
+    width: 70px;
+    border: 1px solid $orange;
+    border-radius: 50%;
+}
+
+.icon-icon-lightbulb, .icon-icon-keyboard, .icon-icon-flash {
+    display: inline-block;
     font-size: 32px;
     color: $orange;
-    border-radius: 50%;
-    border: 2px solid $orange;
-    width: 70px;
-    height: 70px;
-    padding: 13px 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .awesome-info {
     text-align: center;
-    margin-top: 35px;
+    margin-top: 28px;
 }
 
 .awesome-info-h6 {
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 24px;
-    letter-spacing: 1px;
     color: $darkgray;
 }
 
 .awesome-info-p {
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: 1px;
     color: $textgray;
     margin-top: 22px;
 }
@@ -83,5 +89,6 @@
     .awesome-bottom-item {
         width: 100%;
         margin-bottom: 30px;
+        padding: 0;
     }
 }

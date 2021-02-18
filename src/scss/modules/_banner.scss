@@ -1,34 +1,30 @@
 .banner-background {
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 640px;
 }
 
 .banner-container {
-    font-size: 0;
+    @extend %clearfix;
     padding-top: 110px;
+    padding-bottom: 139px;
 }
 
 .banner-left {
     float: left;
-    font-size: 16px;
     width: 60%;
+    padding-left: 25px;
+    padding-right: 145px;
 }
 
 .banner-right {
     float: right;
-    font-size: 16px;
     width: 40%;
 }
 
-.banner-left-top {
-    padding-right: 120px;
-}
-
 .banner-left-top-link {
-    display: block;
+    display: inline-block;
     &:hover {
         opacity: 0.7;
     }
@@ -37,6 +33,7 @@
 .banner-left-h1 {
     font-size: 36px;
     font-family: "Raleway";
+    text-transform: capitalize;
     line-height: 42px;
     color: $white;
     margin-top: 24px;
@@ -44,36 +41,30 @@
 
 .divider {
     border-top: 2px solid $white;
-    width: 67px;
+    width: 65px;
     margin-top: 33px;
-}
-
-.banner-left-bottom {
-    padding-right: 194px;
 }
 
 .banner-left-p {
     font-size: 16px;
     font-family: "Raleway";
+    font-weight: 300;
     line-height: 23px;
-    letter-spacing: 1px;
     color: $white;
     margin-top: 35px;
 }
 
 .banner-left-btn {
-    width: 135px;
     margin-top: 42px;
 }
 
 .left-btn-link {
-    display: block;
+    display: inline-block;
     font-size: 15px;
     font-family: "Raleway";
-    letter-spacing: 1px;
     text-decoration: none;
     color: $white;
-    padding: 12px 33px;
+    padding: 12px 31px;
     border: 1px solid $white;
     background-color: transparent;
     &:hover {
@@ -85,22 +76,21 @@
 // RIGHT
 
 .banner-right-inner {
-    padding: 29px 0px 0px 81px;
+    padding: 29px 23px 0px 76px;
     border-radius: 3px;
 }
 
 .banner-right-first {
     background-color: $gray;
     text-align: center;
-    padding: 18px 25px;
+    padding: 18px 0;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
 
 .first-h2 {
     font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 1px;
+    font-weight: 700;
     color: $darkgray;
 }
 
@@ -113,7 +103,7 @@
 
 .banner-right-input {
     background-color: $white;
-    padding: 13px 35px 45px;
+    padding: 13px 35px 52px;
     :last-child {
         margin-bottom: 0;
         padding-top: 18px;
@@ -124,9 +114,8 @@
     display: block;
     width: 100%;
     font-size: 14px;
-    font-family: "Open Sans";
     color: $inputtxt;
-    padding: 4px 0px 5px 16px;
+    padding: 4px 0px 5px 17px;
     margin-bottom: 40px;
     border:none;
     filter: drop-shadow(0px 1px 0px rgba(0,0,1,0.16));
@@ -138,6 +127,7 @@
 }
 
 .right-btn {
+    display: inline-block;
     font-size: 15px;
     font-weight: 600;
     font-family: "Open Sans";
@@ -146,19 +136,23 @@
     border: none;
     width: 100%;
     height: 100%;
-    padding: 16px 0;
+    padding: 18px 0;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     &:hover {
-        border: 3px solid $orange;
-        background-color: $white;
+        background-color: $darkgray;
         color: $orange;
     }
 }
 
 @include breakpoint(tablet) {
-    .banner-left-top, .banner-left-bottom {
+    .banner-left {
+        width: 50%;
         padding-right: 0;
+        padding-left: 0;
+    }
+    .banner-right {
+        width: 50%;
     }
     .banner-right-inner {
         padding: 29px 0px 0px 25px;
@@ -166,26 +160,24 @@
 }
 
 @include breakpoint(phone) {
-    .banner-background {
-        min-height: 1125px;
+    .banner-container {
+        padding-bottom: 80px;
     }
-    .banner-left, .banner-right {
-        display: block;
+    .banner-left {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .banner-right {
         width: 100%;
     }
-    .banner-left-top, .banner-left-bottom {
-        padding-right: 0;
-    }
     .banner-right-inner {
-        margin-top: 30px;
-        padding: 0;
+        padding: 29px 0px 0px 0px;
     }
     .banner-right-input {
-        padding: 29px 30px 29px 30px;
+        padding: 13px 13px 40px;
     }
-    .right-btn {
-        padding: 15px 0;
-    }
+    
 }
 
 
